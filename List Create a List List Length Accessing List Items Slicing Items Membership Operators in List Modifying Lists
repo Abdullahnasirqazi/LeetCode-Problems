@@ -1,0 +1,56 @@
+#Question no 1
+
+language = "ABdullah"
+print(language[::-1])
+#Question no 2
+
+s = input('Enter the string :')
+reverse = s[::-1]
+if reverse == s:
+  print('It is  palindrome')
+else:
+  print('not a  palindrome')
+#Question no 3
+
+string = '22'
+print(string.isdigit())
+#Question no 4
+
+string ="Name      Age     Country   City"
+print(string[28:33])
+
+#Question no 5
+
+string ="My name is Abdullah"
+print(string)
+print(string.replace('Abdullah','Ali'))
+#Question no 6
+
+string ="  Abdullah  "
+print(len(string))
+blank1=string.lstrip(' ')
+print(blank1)
+print(len(blank1))
+blank2 = blank1.rstrip(' ')
+print(blank2)
+print (len(blank2))
+
+#Question no 7
+
+def display_operations(a, b):
+    addition = a + b
+    subtraction = a - b
+    multiplication = a * b
+
+    result = (
+        f"a + b = {addition}\n"
+        f"a - b = {subtraction}\n"
+        f"a * b = {multiplication}"
+    )
+
+    return result
+
+# Example usage:
+a = 10
+b = 5
+print(display_operations(a, b))
