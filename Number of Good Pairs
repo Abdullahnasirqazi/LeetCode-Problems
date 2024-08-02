@@ -1,0 +1,16 @@
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        maplist = defaultdict()
+
+        count = 0
+
+        for num in nums:
+            if num not in maplist:
+                maplist[num] = 1
+
+            else:
+                count += maplist[num]
+                maplist[num] += 1
+        return count
+
+#Problem url = https://leetcode.com/problems/number-of-good-pairs/
